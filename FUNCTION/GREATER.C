@@ -1,0 +1,23 @@
+/*Program to demonstrate function-09/09/2015*/
+#include<stdio.h>
+#include<conio.h>
+void greater();	//calling function
+
+void main()
+{
+	clrscr();
+	greater();	//function call
+getch();
+}
+void greater()	//called function
+{
+	int num1,num2;
+	printf("Enter two number:");
+	scanf("%d%d",&num1,&num2);
+	if(num1>num2)
+		printf("%d is greater from %d.",num1,num2);
+	else
+		printf("%d is greater from %d",num2,num1);
+}
+
+

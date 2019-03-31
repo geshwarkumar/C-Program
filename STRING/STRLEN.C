@@ -1,0 +1,17 @@
+/*Program to implement strlen()-02/10/2015*/
+#include<stdio.h>
+#include<conio.h>
+#include<string.h>
+
+void main()
+{
+
+	char str1[10];
+	clrscr();
+	printf("\n Enter first string:");
+	scanf("%[^\n]s",&str1);
+
+	printf("\n Length of %s is %d",str1,strlen(str1));
+
+getch();
+}

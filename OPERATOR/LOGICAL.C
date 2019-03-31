@@ -1,0 +1,22 @@
+/*Program to demonstrate Logical operator
+-Geshwar Kumar
+-05/11/2015*/
+
+void main()
+{
+
+	int num1,num2,num3;
+	clrscr();
+	printf("...PROGRAM FOR LOGICAL OPERATOR...\n\n");
+	printf("\n Definition: Used to connect more relational operations to form of a complex expression.\n");
+	printf("\n Enter three numbers:\n");
+	scanf("%d%d%d",&num1,&num2,&num3);
+	printf("\n<<<FOLLOWING TYPES LOGICAL OPERATOR`S USED IN C LANG. >>>\n");
+
+	printf("\n 1.\"&&\" (Logical AND), ex.: (%d<%d) && (%d>%d) = %d",num1,num2,num1,num3,(num1<num2)&&(num1>num3));
+	printf("\n 2.\"||\" (Logical OR), ex.: (%d<%d) || (%d>%d) = %d",num1,num2,num1,num3,(num1<num2)||(num1>num3));
+	printf("\n 3.\"!\" (Logical NOT), ex.: !(%d<%d) = %d",num1,num2,!(num1<num2));
+	printf("\n\n Note :- value \"1\" for True\n\t value \"0\" for false.");
+
+getch();
+}

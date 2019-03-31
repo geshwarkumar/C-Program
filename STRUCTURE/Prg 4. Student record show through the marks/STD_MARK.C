@@ -1,0 +1,40 @@
+/*Program to define a structure of student
+-Geshwar Kumar
+-11/11/2015*/
+
+#include<stdio.h>
+#include<conio.h>
+
+struct student  	//Structure definition
+{
+	char name[10];
+	int rollno;
+	int marks;
+}std[10];
+void main()
+{
+	int num,iter;
+	clrscr();
+	printf("\n How many students record : ");
+	scanf("%d",&num);
+
+	printf("\nEnter %d student record : ",num);
+	for(iter=0;iter<num;iter++)
+	{
+		printf("\n Name : ");scanf("%s",std[iter].name);
+		printf("\n Roll no. : ");scanf("%d",&std[iter].rollno);
+		printf("\n Total Marks(out of 500) : ");scanf("%d",&std[iter].marks);
+	}
+	printf("\nDetails of student whose total marks is greater than 300 :-");
+	for(iter=0;iter<num;iter++)
+	{
+		if(std[iter].marks>=300 && std[iter].marks<=500)
+		{
+			printf("\n Name:%s Roll No.:%d Total Marks:%d",std[iter].name,std[iter].rollno,std[iter].marks);
+
+		}
+	}
+
+getch();
+}
+

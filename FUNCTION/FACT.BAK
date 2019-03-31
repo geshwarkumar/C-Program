@@ -1,0 +1,26 @@
+/*Program to calculate factorial using function-09/09/2015*/
+/*Without parameter and return type*/
+#include<stdio.h>
+#include<conio.h>
+void fact();	//calling function
+
+void main()
+{
+	clrscr();
+	fact();	//function call
+getch();
+}
+void fact()	//called function
+{
+	int num,fact=1,iter=1;
+	printf("Enter the number:");
+	scanf("%d",&num);
+	while(iter<=num)
+	{
+		fact=fact*iter;
+		iter++;
+	}
+	printf("\nFactorial of %d is %d.",);
+}
+
+

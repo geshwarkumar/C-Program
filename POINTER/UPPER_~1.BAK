@@ -1,0 +1,42 @@
+ /*PROGRAM TO TAKE SENTENCE AS INPUT AND CONVERT THE STRING SO THAT THE FIRST LETTER OF EACH WORD IS IN UPPER CASE USING POINTER
+ -GESHWAR KUMAR
+ -08/07/2016*/
+ 
+#include<stdio.h>
+#include<conio.h>
+#include<ctype.h>
+
+int main()
+{
+	/*DECLARATION*/
+	char str[100],*ptr;
+	int iter=0;
+	/*INPUT*/
+	ptr = &str[0];
+
+	printf("\n Enter any sentence:\n");
+	scanf("%[^\n]s",ptr);
+
+	/*PROCESSING*/
+	while(*ptr != '\0')
+	{
+		*ptr = toupper(*ptr);
+		//printf("%s ",ptr);
+		if (*ptr == ' ')
+		{
+			*ptr = toupper(*(++ptr));
+			//printf("%s",ptr);
+		}
+		else if(*ptr != ' ')
+		{
+			*ptr = tolower(*(ptr++));
+			//printf("%s",ptr);
+		}
+		*(ptr++);
+	}
+	/*OUTPUT*/
+	ptr = &str[0];
+	printf("\n Converted String is:\n %s",ptr);
+	//printf("\n Converted String is:\n %s",str);
+return 0;
+}

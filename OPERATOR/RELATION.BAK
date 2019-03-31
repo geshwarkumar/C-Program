@@ -1,0 +1,25 @@
+/*Program to demonstrate Relational operator
+-Geshwar Kumar
+-05/11/2015*/
+
+void main()
+{
+
+	int num1,num2;
+	clrscr();
+	printf("...PROGRAM FOR RELATIONAL OPERATOR...\n\n");
+	printf("\n Definition: Used for copare the values of operands produse a logical value.\n");
+	printf("\n Enter two numbers:\n");
+	scanf("%d%d",&num1,&num2);
+	printf("\n<<<FOLLOWING TYPES RELATIONAL OPERATOR`S USED IN C LANG. >>>\n");
+
+	printf("\n 1.\"<\" (Lessthan), ex.: %d < %d = %d",num1,num2,num1<num2);
+	printf("\n 2.\">\" (Greaterthan), ex.: %d > %d = %d",num1,num2,num1>num2);
+	printf("\n 3.\"<=\" (Lessthan or equal to), ex.: %d <= %d = %d",num1,num2,num1<=num2);
+	printf("\n 4.\">=\" (Greaterthan or equal to), ex.: %d >= %d = %d",num1,num2,num1>=num2);
+	printf("\n 5.\"==\" (Equal to), ex.:%d == %d =%d",num1,num2,num1==num2);
+	printf("\n 6.\"!=\" (Not equal to), ex.: %d != %d = %d",num1,num2,num1!=num2);
+	printf("\n Note :- value \"1\" for True\n\t value \"0\" for false.");
+
+getch();
+}

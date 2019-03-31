@@ -1,0 +1,22 @@
+/*Program to demonstrate Arithmatic operator
+-Geshwar Kumar
+-05/11/2015*/
+
+void main()
+{
+
+	int num1,num2;
+	clrscr();
+	printf("...PROGRAM FOR ARITHMATIC OPERATOR...\n\n");
+	printf("\n Definition: Used for perform all arithmatic operation.\n");
+	printf("\n Enter two numbers:\n");
+	scanf("%d%d",&num1,&num2);
+	printf("\n<<< FOLLOWING TYPES ARITHMATIC OPERATORS USED IN C LANG. >>>\n");
+	printf("\n 1.\"+\"(Addition),ex.: %d + %d = %d",num1,num2,num1+num2);
+	printf("\n 2.\"-\"(Sustraction),ex.: %d - %d = %d",num1,num2,num1-num2);
+	printf("\n 3.\"*\"(Multiplication),ex.: %d * %d = %d",num1,num2,num1*num2);
+	printf("\n 4.\"/\"(Division),ex.: %d / %d = %d",num1,num2,num1/num2);
+	printf("\n 5.\"%%\"(Modulus),ex.:%d %% %d =%d",num1,num2,num1%num2);
+
+getch();
+}

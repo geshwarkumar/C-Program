@@ -1,0 +1,30 @@
+/*Program to calculate percentage of five subject using function through passing array-Geshwar Kumar-06/10/2015*/
+#include<stdio.h>
+#include<conio.h>
+float percent(int[],int);
+
+void main()
+{
+	int arr[5],iter;
+	clrscr();
+
+	printf("\n Enter marks of five subject(upto 100):\n");
+	for(iter=0;iter<5;iter++)
+	{
+		scanf("%d",&arr[iter]);
+	}
+	printf("\n***********Result***********\n");
+	printf("\n Percent is: %.2f",percent(arr,5));
+getch();
+}
+float percent(int per[],int size)
+{
+	int iter,sum=0;float perc;
+	for(iter=0;iter<size;iter++)
+	{
+		sum=sum+per[iter];//%100+per[iter]/100;
+	}
+	percent=sum/5;
+	printf("\n Total marks: %d\n",sum);
+return percent;
+}

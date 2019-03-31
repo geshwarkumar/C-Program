@@ -1,0 +1,46 @@
+/*Program to add two matrix-Geshwar Kumar-04/10/2015*/
+#include<stdio.h>
+#include<conio.h>
+/*#define row 10
+#define col 10
+ */
+void main()
+{
+	int R,C,row,col,mat1[10][10],mat2[10][10],add[10][10];//R=row,C=column
+	clrscr();
+	printf("\n Enter the size of matrix(2-10):");
+	//printf("\n Row:",scanf("Row:%d",&row),"\t Column:",scanf("%d",&col));
+	/*scanf("%d",&row);
+	printf("\t Column: ");
+	scanf("%d",&col);*/
+	scanf("%d",&row,"\tColumn:%d",&col);
+	printf("\n Enter values for %d x %d matrix:\n",row,col);
+	printf("\n Enter the value for first matrix:\n");
+	for(R=0;R<row;R++)
+	{
+		for(C=0;C<col;C++)
+		{
+			scanf("%d",&mat1[R][C]);
+		}
+	}
+	printf("\n Enter the value for second matrix:\n");
+	for(R=0;R<row;R++)
+	{
+		for(C=0;C<col;C++)
+		{
+			scanf("%d",&mat2[R][C]);
+		}
+	}
+	printf("\n *********Result*********");
+	printf("\n Addition of two matrix is:\n");
+	for(R=0;R<row;R++)
+	{
+		for(C=0;C<col;C++)
+		{
+			add[R][C]=mat1[R][C]+mat2[R][C];
+			printf("%d\t",add[R][C]);
+		}
+		printf("\n");
+	}
+getch();
+}

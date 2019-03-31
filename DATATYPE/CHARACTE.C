@@ -1,0 +1,19 @@
+/*Program to demonstrate CHARACTER DATA TYPE-Geshwar Kumar-25/10/2015*/
+#include<stdio.h>
+#include<conio.h>
+
+#include<limits.h> /*CHARACTER SPECIFICATION*/
+
+void main()	//Main function
+{
+	//char ch;	//INTEGER type declaration
+	clrscr();
+
+	printf("\n Types of CHARACTER TYPE with details:\nKeyword \"char\"is used.\n");
+	printf("\n 1.Signed Character Type:(signed char/char)");
+		printf("\n Size(in byte) = %d bits = %d\tRange = %d to %d",sizeof(signed char),CHAR_BIT,CHAR_MIN,CHAR_MAX);
+	   //or printf("\n Size(in byte) = %d bits = %d\tRange = %d to %d",sizeof(signed char),CHAR_BIT,SCHAR_MIN,SCHAR_MAX);
+	printf("\n\n 2.Uigned Character Type:(unsigned char)");
+		printf("\n Size(in byte) = %d bits = %u\tRange = 0 to %d",sizeof(unsigned char),CHAR_BIT,UCHAR_MAX);
+getch();
+}

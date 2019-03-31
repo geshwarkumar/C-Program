@@ -1,0 +1,21 @@
+/*Program to demonstrate putch() function
+-Geshwar Kumar
+-29/11/2015*/
+
+#include<stdio.h>
+#include<conio.h>
+
+void main()
+{
+	char ch='G'; //character type declaration
+	clrscr();
+	printf(" <<< Program to demostrate putch() >>>");
+	printf("\n DEFINITION: It is used to display single character at a time.");
+	printf("\n\n SYMNTAX : putch(character_variable);");
+	printf("\n EXAMPLE : ");
+	printf(" Given character is : ");
+	putch(ch);
+	printf("\n EVALUATE : putch(ch);\n\t Where ch is character variable like char ch='G';");
+
+getch();
+}

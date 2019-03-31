@@ -1,0 +1,133 @@
+/*Program for menu editing using nested swith-Geshwar Kumar-19/08/2015*/
+#include<conio.h>
+#include<stdio.h>
+#include<math.h>
+#include<stdlib.h>
+#define pi 3.14
+
+/*Globely variable declaration*/
+int num,choise,num1,num2,pr,time,rate,base,hieght,radius,width;
+float res;
+char op;
+
+void main()
+{
+	clrscr();
+	do
+	{
+		printf("Your choise are:\n");
+		printf("\n 1 for Arithmetic operation.");
+		printf("\n 2 for Calculate interest.");
+		printf("\n 3 for Area of geometric shap.");
+		printf("\n 4 for Exit.\n");
+		printf("Enter your choise:");
+		scanf("%d",&num);
+
+		switch(num)
+		{
+			case 1: printf("\nYour choise is Arithmetic oprestration.\n\n");
+				printf("Enter two numbers: ");
+				scanf("%d%d",&num1,&num2);
+
+				printf("Enter operator(+/-/*//):");
+				fflush(stdin);
+				scanf("%c",&op);
+
+				switch(op)
+				{
+					case '+':
+						res=num1+num2;
+						break;
+					case '-':
+						res=num1-num2;
+						break;
+					case '*':
+						res=num1*num2;
+						break;
+					case '/':
+						res=num1/num2;
+						break;
+					default:
+						printf("%c is wrong selection",op);
+				}
+				printf("\nResult computed is:%.2f",res);
+				break;
+			case 2:printf("\nYour choise is compute Interest.\n\n");
+
+				printf("Input are:\n");
+				printf("Principle: ");scanf("%d",&pr);
+				printf("Rate: ");scanf("%d",&rate);
+				printf("Time: ");scanf("%d",&time);
+
+				printf("Your choises are...\n");
+				printf("s for Simple Interest\n");
+				printf("c for Compound Interest.\n");
+				printf("Enter your choise is:");
+				fflush(stdin);
+				scanf("%c",&op);
+
+				switch(op)
+				{
+					case 's':printf("Your choise is Simple Interest.\n\n");
+						res=pr*rate*time/100;
+						break;
+					case 'c':printf("Your choise is Compound Interest.\n\n");
+						res=(float)pr*pow((1+rate/100),time);
+						break;
+					default:
+						printf("%c is wrong selection",op);
+				}
+				printf("\nResult computed is:%.2f",res);
+				break;
+			case 3:printf("\nYour choise is compute Area of geomeric shaps.\n\n");
+
+				printf("Your choises are...\n");
+				printf("t for Area of traingle.\n");
+				printf("c for Area of circle.\n");
+				printf("r for Area of rectangle.\n");
+				printf("Enter your choise is:");
+				fflush(stdin);
+				scanf("%c",&op);
+
+				switch(op)
+				{
+					case 't': printf("Your choise is Area of traingle.\n");
+						printf("Inputes:\n");
+						printf("Enter base of traingle:");
+						scanf("%d",&base);
+						printf("Enter hieght of traingle:");
+						scanf("%d",&hieght);
+						res=(float)(base*hieght)/2;
+						break;
+					case 'c': printf("Your choise is Area of circle.\n");
+						printf("Inputes:\n");
+						printf("Enter radius of a circle:");
+						scanf("%d",&radius);
+						res=pi*radius*radius;
+						break;
+					case 'r': printf("Your choise is Area of rectangle.\n");
+						printf("Inputes:\n");
+						printf("Enter base of rectangle:");
+						scanf("%d",&base);
+						printf("Enter width of reactangle:");
+						scanf("%d",&width);
+						res=base*width;
+					break;
+					default:
+						printf("%c is wrong selection",op);
+				}
+				printf("\nResult computed is:%.2f",res);
+				break;
+			case 4:exit(1);
+			default:
+				printf("%d is wrong selection",num);
+		}
+		printf("\nDo you wish to continue(y/n):");
+		fflush(stdin);
+		scanf("%c",&op);
+		clrscr();
+	}while(op=='y'||op=='Y');
+getch();
+}
+
+
